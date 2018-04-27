@@ -1,0 +1,30 @@
+
+extends layout
+
+block content
+  h1 #{title}
+  p Welcome to #{title}
+  |
+  form(
+      method='GET'
+      action='alert("noe")')
+    label(for='nick') Nick:
+    br
+    input(
+      type='text'
+      name='nick'
+      placeholder='Enter Fortnite nick'
+    )
+    br
+    label(for='platform') Velg platform
+    br
+    select(name='platform')
+      option(value='opt1') PC
+      option(value='opt2') PS
+      option(value='opt3') MOBILE
+    br
+    input(
+      type='submit'
+    )
+
+
